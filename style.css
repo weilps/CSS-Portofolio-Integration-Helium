@@ -79,7 +79,6 @@ section.infos h3 {
 
 button {
   display: block;
-  /* margin: auto; */
   width: 150px;
   height: 30px;
   padding: 10px 0;
@@ -87,13 +86,13 @@ button {
   background: var(--color4);
   border: none;
   color: var(--color3);
-  /* font-size: 1rem; */
   font-weight: bold;
   letter-spacing: 1px;
   margin: 5px;
 }
 
 .investors {
+  width: 100%;
   display: grid;
   align-items: center;
   height: 80%;
@@ -106,4 +105,50 @@ button {
 
 section.infos img {
   height: 60px;
+}
+
+/* ********* MEDIA QUERIES ******* */
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  section.infos img {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav {
+    grid-template-columns: 35% 65%;
+  }
+  nav ul {
+    font-size: 0.6rem;
+  }
+  header {
+    display: block;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  header h3 {
+    font-size: 1.3rem;
+  }
+  section.infos {
+    display: block;
+    justify-content: center;
+  }
+  section.infos h3 {
+    text-align: center;
+  }
+  .btn-container {
+    display: block;
+    margin: auto;
+  }
+  button {
+    margin: 5px auto;
+  }
+  .investors {
+    display: block;
+  }
 }
