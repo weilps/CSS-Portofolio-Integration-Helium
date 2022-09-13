@@ -42,6 +42,7 @@ nav ul {
 header {
   display: grid;
   grid-template-columns: 50% 50%;
+  align-items: center;
   margin: 30px auto;
 }
 
@@ -111,7 +112,13 @@ section.infos img {
 
 @media screen and (max-width: 900px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+  }
+  header h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.7rem;
   }
   section.infos img {
     height: 40px;
@@ -136,19 +143,15 @@ section.infos img {
   }
   section.infos {
     display: block;
-    justify-content: center;
-  }
-  section.infos h3 {
     text-align: center;
-  }
-  .btn-container {
-    display: block;
-    margin: auto;
   }
   button {
     margin: 5px auto;
   }
   .investors {
     display: block;
+  }
+  section.infos img {
+    height: 33px;
   }
 }
