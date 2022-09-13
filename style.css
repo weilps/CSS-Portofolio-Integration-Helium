@@ -15,140 +15,95 @@
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 p {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 body {
   background: var(--color1);
-  min-height: 100vh; 
+  min-height: 100vh;
   color: var(--color3);
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 10px 20px;
-  width: 100%;
-  height: 50px;
-  position: relative;
-}
-
-h2 {
-  /* position: absolute; */
-  /* left: 0; */
 }
 
 nav ul {
-  /* position: absolute; */
-  /* right: 0; */
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    min-height: 400px;
-    margin: 30px auto;
-}
-
-.header-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-.header-left-container {
-    /* margin-top: 50px; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 30px auto;
 }
 
 h1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 header h3 {
-    color: var(--color4);
-    font-size: 1.8rem;
+  color: var(--color4);
+  font-size: 1.8rem;
 }
 
 .header-right {
-    width: 50%;
-    /* height: 100%; */
-    right: 0;
+  width: 100%;
 }
 
 #modem {
-    width: 100%;
+  width: 100%;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 section.infos {
-    display: flex;
-    background: var(--color2);
-    color: var(--color3);
-    border-radius: 10px;
+  display: grid;
+  grid-template-columns: 33% 67%;
+  background: var(--color2);
+  color: var(--color3);
+  border-radius: 10px;
 }
 
 section.infos h3 {
-    color: var(--color3);
-}
-
-.infos-left {
-    width: 33%;
-}
-
-.btn-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 50%;
-    padding: 10px;
+  color: var(--color3);
 }
 
 button {
-    display: block;
-    /* margin: auto; */
-    width: 150px;
-    height: 30px;
-    padding: 10px 0;
-    border-radius: 10px;
-    background: var(--color4);
-    border: none; 
-    color: var(--color3);
-    /* font-size: 1rem; */
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 5px;
-}
-
-.infos-right {
-    width: 67%;
+  display: block;
+  /* margin: auto; */
+  width: 150px;
+  height: 30px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background: var(--color4);
+  border: none;
+  color: var(--color3);
+  /* font-size: 1rem; */
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
 }
 
 .investors {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
+  display: grid;
+  align-items: center;
+  height: 80%;
 }
 
 .img-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
 section.infos img {
-    display: block;
-    margin: auto;
-    height: 60px;
-    max-width: 20%;
+  height: 60px;
 }
