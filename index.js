@@ -1,4 +1,4 @@
-const addCircle = (name, iD, size) => {
+const addCircle = (name, iD) => {
   name = document.createElement("span");
   name.classList.add("circle");
   document.body.appendChild(name);
@@ -10,11 +10,11 @@ addCircle("c1", "c1");
 addCircle("c2", "c2");
 addCircle("c3", "c3");
 
-document.addEventListener("mousemove", (e) => {
-  c1.style.top = e.pageY + "px";
-  c1.style.left = e.pageX + "px";
-  c2.style.top = e.pageY + "px";
-  c2.style.left = e.pageX + "px";
-  c3.style.top = e.pageY + "px";
-  c3.style.left = e.pageX + "px";
+const circles = document.querySelectorAll(".circle");
+// console.log(circles);
+window.addEventListener("mousemove", (e) => {
+  circles.forEach((circle) => {
+    circle.style.top = e.y + "px";
+    circle.style.left = e.x + "px";
+  });
 });
