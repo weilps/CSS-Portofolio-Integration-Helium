@@ -10,12 +10,24 @@
 * {
   margin: 0;
   padding: 5px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial;
   box-sizing: border-box;
 }
 
 li {
   list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--color3);
+  transition: 0.4s;
+}
+
+a:hover {
+  font-size: 1.3rem;
+  color: var(--color4);
 }
 
 p {
@@ -32,6 +44,7 @@ nav {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 10px 20px;
+  height: 80px;
 }
 
 nav ul {
@@ -154,4 +167,11 @@ section.infos img {
   section.infos img {
     height: 33px;
   }
+}
+
+/* MOUSE EFFECT */
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
 }
